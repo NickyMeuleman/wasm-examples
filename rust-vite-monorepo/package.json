@@ -1,0 +1,22 @@
+{
+  "name": "rust-vite-monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "packages/rust/pkg",
+    "packages/www"
+  ],
+  "scripts": {
+    "www:dev": "yarn workspace www dev",
+    "www:build": "yarn workspace www build",
+    "rust:dev": "cd packages/rust && cargo watch -i .gitignore -i \"pkg/*\" -s \"wasm-pack build --target web\"",
+    "rust:build": "cd packages/rust && wasm-pack build --target web",
+    "dev": "concurrently --kill-others-on-fail \"yarn www:dev\"  \"yarn rust:dev\"",
+    "build": "yarn rust:build && yarn www:build"
+  },
+  "dependencies": {
+    "concurrently": "^6.3.0"
+  }
+}
