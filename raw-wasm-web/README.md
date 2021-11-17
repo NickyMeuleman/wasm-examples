@@ -4,7 +4,7 @@ It has an `index.html` that includes a script as a module with ` <script type="m
 In a WebAssembly text format file called `math.wat`, we write a `square` function.
 
 The `.wat` file contains some instructions for the webassembly stack machine.
-Chris has has [a great webassembly stackmachine explanation](https://www.youtube.com/watch?v=Hq_cj77fuqo).
+Chris Hay has [a great webassembly stackmachine explanation](https://www.youtube.com/watch?v=Hq_cj77fuqo).
 
 ```wat
 (module
