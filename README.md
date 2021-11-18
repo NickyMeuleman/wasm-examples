@@ -4,13 +4,10 @@ Currently focused on compiling [Rust](https://www.rust-lang.org/) to WebAssembly
 
 browser TODO:
 - sveltekit
-- vanilla Webpack
 - Gatsby
 - NextJS
 - NuxtJS
 
 non-browser TODO:
 - Wasmer
-- wasmtime
-- NodeJs
 - Deno
