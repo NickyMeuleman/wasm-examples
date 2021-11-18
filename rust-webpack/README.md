@@ -18,5 +18,5 @@ Webpack is used to orchestrate everything.
 The dev server is ran by [`webpack-dev-server`](https://github.com/webpack/webpack-dev-server).
 The automatic building of the Rust code by [`wasm-pack`](https://github.com/rustwasm/wasm-pack) is handled by [`@wasm-tool/wasm-pack-plugin`](https://github.com/wasm-tool/wasm-pack-plugin).
 
-The buildt WASM package is imported is `index.js` via a dynamic import.
+The built WASM package is imported is `index.js` via a dynamic import.
 The returned module object contains the function we wrote in Rust. (specifically, the glue code function `wasm-pack` created that calls into the `.wasm` binary).
