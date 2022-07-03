@@ -4,8 +4,6 @@ Currently focused on compiling [Rust](https://www.rust-lang.org/) to WebAssembly
 
 browser TODO:
 - sveltekit
-- Gatsby
-- NextJS
 - NuxtJS
 
 non-browser TODO:
