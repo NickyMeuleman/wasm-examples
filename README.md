@@ -8,4 +8,3 @@ browser TODO:
 
 non-browser TODO:
 - Wasmer
-- Deno
